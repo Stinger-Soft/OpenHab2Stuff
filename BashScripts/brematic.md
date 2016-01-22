@@ -1,8 +1,8 @@
 Sends an UDP package to the brematic gateway to switch a wireless socket on or off
 
-== Arguments == 
+### Arguments
 
-brematic.sh <GATEWAY_IP> <GATEWAY_PORT> <MASTER_ID><SLAVE_ID> <ON|OFF>
+brematic.sh &lt;GATEWAY_IP&gt; &lt;GATEWAY_PORT&gt;&lt;MASTER_ID&gt;&lt;SLAVE_ID&gt; &lt;ON|OFF&gt;
 
 * GATEWAY_IP: The IP address of the brematic gateway
 * GATEWAY_PORT: The port of the brematic gateway (usually 49880)
