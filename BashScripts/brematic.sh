@@ -7,13 +7,6 @@ action="$4"
 SUFFIX="1,1,16,;"
 
 CODE=`echo ${socketId} | awk '{
-  cnt=0
-  for (i=1; i <= length($0); ++i)
-  {
-    c = substr($0, i, 1)
-    if (c=="0" || c=='1')
-      ++cnt
-  }
   printf("TXP:0,0,10,5600,350,25,1,")
   for (i=1; i <= length($0); ++i)
   {
@@ -23,7 +16,6 @@ CODE=`echo ${socketId} | awk '{
     else if (c=="0")
       printf("3,3,1,1,")
   }
-#  printf("16,;\n")
 }'`
 
 ACTION="3,1,1,3,1,";
